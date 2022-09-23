@@ -3,23 +3,58 @@ body {
     //background-size: contain;
     display: flex;
     //height: calc(100vh - 100px - 100px);
-    width: 100%;
+    width: 100vw;
     &>header {
         /*& = ele mesmo*/
-        height: 100px;
+        align-items: center;
+        background-color: #fff;
         display: flex;
+        height: 100px;
+        justify-content: center;
         position: fixed;
         top: 0;
+        transition-duration: 0.5s;
         width: 100px;
         z-index: 100;
+        &>nav {
+            width: 70%;
+            &>ul {
+                margin: 0;
+                display: flex;
+                &>li {
+                    list-style: none;
+                    margin-right: 20px;
+                    &>a {
+                        text-decoration: none;
+                        color: #222;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
         button {
-            width: 290px;
             height: 40px;
             background: #FFE45C;
+            border: none;
+            border-radius: 20px;
+            color: #333;
             font-size: 0.8em;
             border-radius: 20px;
+            text-transform: uppercase;
+            width: 290px;
         }
     }
+}
+
+//colore o svg
+.jss4 .jss6 {
+    fill: hsla(0, 0%, 14%, 1);
+}
+
+//da tamanho ao svg
+.jss12 {
+    height: 24px;
+    width: auto;
 }
 
 
