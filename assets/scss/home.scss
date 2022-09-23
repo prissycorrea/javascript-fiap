@@ -1,8 +1,5 @@
 body {
-    //background: url('../images/hero-bg-xs.webp') no-repeat;
-    //background-size: contain;
     display: flex;
-    //height: calc(100vh - 100px - 100px);
     width: 100vw;
     &>header {
         /*& = ele mesmo*/
@@ -43,6 +40,13 @@ body {
             width: 290px;
         }
     }
+}
+
+div.destak {
+    background: url('../images/hero-bg-xs.webp') no-repeat;
+    background-size: contain;
+    height: calc(100vh - 100px - 100px);
+    //transform: translate (-10%, -10%);
 }
 
 //colore o svg
