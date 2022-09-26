@@ -29,24 +29,77 @@ body {
                 }
             }
         }
-        button {
-            background: #FFE45C;
-            border: none;
-            border-radius: 20px;
-            color: #333;
+    }
+}
+
+.full-banner {
+    background: url('../images/hero-bg-xs.webp') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    .destak {
+        width: 40%;
+        height: 60vh;
+        position: absolute;
+        bottom: 0;
+        left: 15%;
+        >h1 {
+            font-size: 4em;
+            line-height: 1em;
+            font-weight: 300;
+        }
+        h2,
+        h3 {
+            font-weight: 300;
+        }
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+        }
+        h3 {
+            width: 95%;
+            background: rgba(36, 36, 36, 0.35);
+            color: #FFF;
+            font-weight: normal;
+            line-height: 3em;
+            border-radius: 25px;
             font-size: 0.8em;
-            height: 40px;
-            text-transform: uppercase;
-            width: 290px;
+            padding: 0 2%;
+            span {
+                //elemento de linha
+                background: #006d8f;
+                border-radius: 25px;
+                display: inline-block;
+                line-height: 1.6em;
+                padding: 0 3%;
+                width: fit-content;
+            }
         }
     }
 }
 
-div.destak {
-    background: url('../images/hero-bg-xs.webp') no-repeat;
-    background-size: contain;
-    height: calc(100vh - 100px - 100px);
-    //transform: translate (-10%, -10%);
+button {
+    background: linear-gradient(150deg, #FFE45C 0%, #FFC900 100%);
+    border: none;
+    border-radius: 20px;
+    color: #333;
+    font-size: 0.8em;
+    height: 40px;
+    text-transform: uppercase;
+    width: 290px;
+}
+
+button:hover {
+    background: linear-gradient(150deg, #FFE978 0%, #FBD033 100%);
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+button.disabled {
+    background: rgba(36, 36, 36, 0.8);
+    border: solid 0.5px rgba(0, 0, 0, 0.5)
 }
 
 //colore o svg
@@ -61,4 +114,19 @@ div.destak {
 }
 
 
-/*@media ... desafio p amanha*/
+/*breakpoints, números que usamos para definir em que momento o CSS muda dependendo da tela*/
+
+
+/*Smartphone - nenhuma (mobile first)
+tablet - 768px
+desktop - 992px, 1200px ou 1280px
+desktop grande - 1440px, 1600px ou 1920px
+
+768px e 992px ou 1280px são os mais usados*/
+
+@media (min-width: 992px) {
+    .full-banner {
+        background: url('../images/hero-bg.webp');
+        background-size: cover;
+    }
+}
