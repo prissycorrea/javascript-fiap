@@ -29,6 +29,11 @@ body {
                 }
             }
         }
+        &.footer-link-a {
+            >nav>ul>li>a {
+                color: #fff;
+            }
+        }
     }
 }
 
@@ -118,6 +123,10 @@ button.disabled:hover {
     height: 24px;
     width: auto;
 }
+
+
+/*composição - monte seu css como um lanche do subway
+<button class="btn-danger">*/
 
 
 /*breakpoints, números que usamos para definir em que momento o CSS muda dependendo da tela*/
