@@ -56,6 +56,9 @@ body {
             margin-bottom: 5%;
             margin-top: 2%;
         }
+        h2 {
+            padding-bottom: 1em;
+        }
         h2,
         h3 {
             margin: 0;
@@ -110,7 +113,7 @@ button.disabled {
 }
 
 button.disabled:hover {
-    border: solid 0.5px rgba(36, 36, 36, 0.2)
+    background: rgba(36, 36, 36, 0.2);
 }
 
 //colore o svg
