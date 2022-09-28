@@ -40,11 +40,11 @@
             <form action="cadastro2.php" method="post" class="form-login">
                 <label for="login">
                     CPF*
-                    <input type="text" name="login" placeholder="Digite ao CPF" id="login" required oninvalid="this.setCustomValidity('Preencha o campo CPF')" oninput="this.setCustomValidity('')">
+                    <input type="text" name="login" placeholder="Digite ao CPF" id="login" required oninvalid="this.setCustomValidity('Preencha o campo CPF')" oninput="this.setCustomValidity('')" pattern="[0-9]{3}\.?[0-9]{3}\.?[0-9]{3}\-?[0-9]{2}"/>
                 </label>
                 <label for="password">
                     Senha*
-                    <input type="password" name="password" placeholder="Digite a senha" id="password" required>
+                    <input type="password" name="password" placeholder="Digite a senha" id="password" required title="A senha deve conter, ao menos uma letra minúscula, uma letra maiúscula, um número e 8 caracteres." pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"/>
                 </label>
                 <button type="submit">Continuar</button>
                 <p>
