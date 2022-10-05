@@ -1,13 +1,20 @@
 {
-    "name": "web",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "dev": "sass --watch ./assets/scss:./assets/css --style compressed --no-source-map",
-        "git": "git add --all && git commit -m 'Deploy' && git push origin main && echo 'deploy realizado'"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC"
+  "name": "web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "git": "git add --all && git commit -m'Deploy' && git push origin master && echo 'deploy realizado"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prissycorrea/fiap-c6bank.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prissycorrea/fiap-c6bank/issues"
+  },
+  "homepage": "https://github.com/prissycorrea/fiap-c6bank#readme"
 }
